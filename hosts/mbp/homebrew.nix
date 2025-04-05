@@ -40,6 +40,7 @@ _:
       "spotify"
       "syncthing"
       "prusaslicer"
+      "arduino-ide"
     ];
     masApps = { };
     onActivation.cleanup = "zap";

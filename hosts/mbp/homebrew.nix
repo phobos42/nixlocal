@@ -27,6 +27,7 @@ _:
       "qmk/qmk"
     ];
     casks = [
+      "darktable"
       "blender"
       "discord"
       "firefox"

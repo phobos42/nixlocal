@@ -20,6 +20,11 @@ _:
       "ollama"
       "qmk/qmk/qmk"
       "usbutils"
+      "cmake"
+      "protobuf"
+      "rust"
+      "python@3.10"
+      "wget"
     ];
     taps = [
       "osx-cross/arm"
@@ -31,6 +36,7 @@ _:
       "blender"
       "discord"
       "firefox"
+      "kicad"
       "font-meslo-lg-nerd-font"
       "gimp"
       "hammerspoon"

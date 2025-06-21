@@ -6,7 +6,7 @@ let
 in
 {
   system.stateVersion = 6;
-
+  system.primaryUser = username;
   imports = mkImports {
     inherit username;
 

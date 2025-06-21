@@ -14,7 +14,7 @@
     };
     history.size = 10000;
 
-    initExtra = "
+    initContent = "
       if [ -z \"$TMUX\" ]
         then
             tmux attach -t HOME || tmux new -s HOME

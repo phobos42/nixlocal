@@ -18,12 +18,16 @@ in
   # services.nix-daemon.enable = true;
 
   environment.shells = with pkgs; [ zsh ];
+  
 
   # programs.fish.enable = true;
 
   users.users.garrett = {
     home =  /. + "/Users/garrett";
     shell = pkgs.zsh;
+  };
+  environment.variables = {
+    SOPS_AGE_KEY_FILE = "/Users/garrett/.config/sops/age/keys.txt";
   };
 
   nix.extraOptions = ''

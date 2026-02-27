@@ -25,6 +25,8 @@ _:
       "rust"
       "python@3.10"
       "wget"
+      "python3"
+      "libusb"
     ];
     taps = [
       "osx-cross/arm"

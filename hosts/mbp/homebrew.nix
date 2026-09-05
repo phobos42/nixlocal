@@ -50,6 +50,8 @@ _:
       "syncthing"
       "prusaslicer"
       "arduino-ide"
+      "Sikarugir-App/sikarugir/sikarugir"
+      "ghostty"
     ];
     masApps = { };
     onActivation.cleanup = "zap";

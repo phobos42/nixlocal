@@ -1,5 +1,8 @@
-{ ... }:
+{ pkgs, ... }:
 {
+  home.packages = with pkgs;[
+    pkgs.alacritty
+  ];
   programs.alacritty = {
     enable = true;
     settings = {
@@ -7,11 +10,13 @@
 
       # import = [ "~/.config/alacritty/themes/themes/gruvbox_dark.toml" ];
 
-      keyboard.bindings = [{
-        action = "ToggleSimpleFullscreen";
-        key = "Return";
-        mods = "Command";
-      }];
+      keyboard.bindings = [
+        {
+          action = "ToggleSimpleFullscreen";
+          key = "Return";
+          mods = "Command";
+        }
+      ];
 
       window = {
         decorations = "none";

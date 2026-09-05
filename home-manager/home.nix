@@ -28,7 +28,7 @@
       # # Adds the 'hello' command to your environment. It prints a friendly
       # # "Hello, world!" when run.
       # pkgs.hello
-      
+      # pkgs.alacritty
       pkgs.nerd-fonts.meslo-lg
       pkgs.nixfmt
       pkgs.colmena
@@ -40,6 +40,11 @@
       pkgs.SDL2
       pkgs.libslirp
       pkgs.dfu-util
+      pkgs.platformio
+      pkgs.platformio-core
+      pkgs.python313Packages.rich-click
+      pkgs.python313Packages.intelhex
+
 
       # # You can also create simple shell scripts directly inside your
       # # configuration. For example, this adds a command 'my-hello' to your
@@ -85,6 +90,7 @@
     };
   # };
   imports = [
+    ./ghostty.nix
     ./alacritty.nix
     ./tmux.nix
     ./zsh.nix

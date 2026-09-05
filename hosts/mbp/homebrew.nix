@@ -18,7 +18,6 @@ _:
       "neovim"
       "node"
       "ollama"
-      "qmk/qmk/qmk"
       "usbutils"
       "cmake"
       "protobuf"
@@ -29,12 +28,10 @@ _:
       "libusb"
     ];
     taps = [
-      "osx-cross/arm"
-      "osx-cross/avr"
-      "qmk/qmk"
+      # "osx-cross/arm"
+      # "osx-cross/avr"
     ];
     casks = [
-      "darktable"
       "blender"
       "discord"
       "firefox"
@@ -47,11 +44,17 @@ _:
       "mongodb-compass"
       "obsidian"
       "spotify"
-      "syncthing"
+      "syncthing-app"
       "prusaslicer"
       "arduino-ide"
+      "Sikarugir-App/sikarugir/sikarugir"
+      "ghostty"
     ];
     masApps = { };
-    onActivation.cleanup = "zap";
+    onActivation = {
+      autoUpdate = true;
+      upgrade = true;
+      cleanup = "zap";  # Less aggressive
+    };
   };
 }

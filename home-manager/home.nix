@@ -22,29 +22,25 @@
 
     # The packages option allows you to install Nix packages into your
     # environment.
-    home.packages = [
+    home.packages = with pkgs;[
       
-
-      # # Adds the 'hello' command to your environment. It prints a friendly
-      # # "Hello, world!" when run.
-      # pkgs.hello
-      # pkgs.alacritty
-      pkgs.nerd-fonts.meslo-lg
-      pkgs.nixfmt
-      pkgs.colmena
+      nerd-fonts.meslo-lg
+      nixfmt
+      colmena
 
       # packages for esp32 development
-      pkgs.libgcrypt
-      pkgs.glib
-      pkgs.pixman
-      pkgs.SDL2
-      pkgs.libslirp
-      pkgs.dfu-util
-      pkgs.platformio
-      pkgs.platformio-core
-      pkgs.python313Packages.rich-click
-      pkgs.python313Packages.intelhex
+      libgcrypt
+      glib
+      pixman
+      SDL2
+      libslirp
+      dfu-util
+      platformio
+      platformio-core
+      python313Packages.rich-click
+      python313Packages.intelhex
 
+      qmk
 
       # # You can also create simple shell scripts directly inside your
       # # configuration. For example, this adds a command 'my-hello' to your
@@ -95,6 +91,7 @@
     ./tmux.nix
     ./zsh.nix
     ./starship.nix
+    ./hammerspoon.nix
   ];
   fonts.fontconfig.enable = true;
 

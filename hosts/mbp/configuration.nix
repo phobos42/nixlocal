@@ -28,7 +28,7 @@ in
   };
   environment.variables = {
     SOPS_AGE_KEY_FILE = "/Users/garrett/.config/sops/age/keys.txt";
-  };
+  }; 
 
   nix.extraOptions = ''
     auto-optimise-store = true
